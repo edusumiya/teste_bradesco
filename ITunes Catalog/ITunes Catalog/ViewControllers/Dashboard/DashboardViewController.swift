@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import PKHUD
 
 class DashboardViewController: UIViewController {
     
@@ -23,6 +24,7 @@ class DashboardViewController: UIViewController {
     
     // MARK: View Objects Methods
     @IBAction func ShowMusicFeed(_ sender: Any) {
+        
         ShowFeed(feedId: .MUSIC)
     }
 
@@ -33,11 +35,19 @@ class DashboardViewController: UIViewController {
     
     // MARK: Other Methods
     func ShowFeed(feedId : FeedCategory) {
-        let catalogViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogFeed") as! CatalogViewController
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         
-        catalogViewController.feedId = feedId
-        
-        self.navigationController?.pushViewController(catalogViewController, animated: true)
+        CatalogAPI.GetFeed(feedId: feedId, completion: { (feedResult) in
+            let catalogViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogFeed") as! CatalogViewController
+            catalogViewController.feedId = feedId
+            catalogViewController.catalog = feedResult
+            
+            self.navigationController?.pushViewController(catalogViewController, animated: true)
+        }, fail: { (message) in
+            PKHUD.sharedHUD.contentView = PKHUDTextView(text: message)
+            PKHUD.sharedHUD.show()
+        })
     }
 }
 

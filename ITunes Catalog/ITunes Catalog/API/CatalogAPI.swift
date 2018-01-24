@@ -12,11 +12,11 @@ class CatalogAPI
 {
     
     // MARK: API URLs
-    static let urlMusic : String = "https://rss.itunes.apple.com/api/v1/us/apple-music/hot-tracks/all/20/explicit.json"
-    static let urlMovie : String = "https://rss.itunes.apple.com/api/v1/us/movies/top-movies/all/20/explicit.json"
+    static let urlMusic : String = "https://rss.itunes.apple.com/api/v1/us/apple-music/hot-tracks/all/50/explicit.json"
+    static let urlMovie : String = "https://rss.itunes.apple.com/api/v1/us/movies/top-movies/all/50/explicit.json"
     
     // MARK: API Methods
-    static func GetFeed(feedId : FeedCategory, completion: @escaping (_ result : CatalogFeed) -> Void){
+    static func GetFeed(feedId : FeedCategory, completion: @escaping (_ result : CatalogFeed) -> Void,  fail: @escaping (_ result : String) -> Void){
         
         let url = URL(string: (feedId == .MUSIC ? urlMusic : urlMovie))
         
@@ -34,7 +34,7 @@ class CatalogAPI
         }
         catch
         {
-            print("Fail to Get Feed from Internet")
+            fail("Fail to Get Feed from Internet")
         }
     }
 }

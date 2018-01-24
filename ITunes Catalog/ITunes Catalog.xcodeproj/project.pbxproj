@@ -16,16 +16,20 @@
 		890667982016C03000AAFC66 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890667922016C03000AAFC66 /* Links.swift */; };
 		890667992016C03000AAFC66 /* CatalogFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890667932016C03000AAFC66 /* CatalogFeed.swift */; };
 		8906679A2016C03000AAFC66 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890667942016C03000AAFC66 /* Results.swift */; };
-		8973D50A2016D7890013BADD /* CatalogItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8973D5092016D7890013BADD /* CatalogItemTableViewCell.xib */; };
 		89BD59D120180D4900637836 /* FeedCategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD59D020180D4900637836 /* FeedCategoryEnum.swift */; };
 		89BD59DA20180EDA00637836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD59D620180EDA00637836 /* LaunchScreen.storyboard */; };
 		89BD59DB20180EDA00637836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD59D820180EDA00637836 /* Main.storyboard */; };
 		89BD59DD20180FC400637836 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD59DC20180FC400637836 /* CatalogViewController.swift */; };
 		89BD59DF20180FD300637836 /* CatalogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD59DE20180FD300637836 /* CatalogAPI.swift */; };
-		89BD59E02018103000637836 /* CatalogItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8973D50B2016DAC90013BADD /* CatalogItemTableViewCell.swift */; };
+		89F4DC1B201819BE00FB91C9 /* CatalogItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F4DC19201819BE00FB91C9 /* CatalogItemTableViewCell.swift */; };
+		89F4DC1C201819BE00FB91C9 /* CatalogItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89F4DC1A201819BE00FB91C9 /* CatalogItemTableViewCell.xib */; };
+		9C095A6A42ABD718EE046456 /* Pods_ITunes_Catalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D5053B60CF7D1E8D575A43 /* Pods_ITunes_Catalog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22D5053B60CF7D1E8D575A43 /* Pods_ITunes_Catalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITunes_Catalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799966EFF0D155BFA95BF37B /* Pods-ITunes Catalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITunes Catalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-ITunes Catalog/Pods-ITunes Catalog.release.xcconfig"; sourceTree = "<group>"; };
+		8542EEF61A1E9470B917001D /* Pods-ITunes Catalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITunes Catalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ITunes Catalog/Pods-ITunes Catalog.debug.xcconfig"; sourceTree = "<group>"; };
 		890667362016B01B00AAFC66 /* ITunes Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITunes Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		890667392016B01B00AAFC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Delegates/AppDelegate.swift; sourceTree = "<group>"; };
 		8906673B2016B01B00AAFC66 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = "ITunes Catalog/ViewControllers/Dashboard/DashboardViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -37,13 +41,13 @@
 		890667922016C03000AAFC66 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		890667932016C03000AAFC66 /* CatalogFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogFeed.swift; sourceTree = "<group>"; };
 		890667942016C03000AAFC66 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
-		8973D5092016D7890013BADD /* CatalogItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CatalogItemTableViewCell.xib; path = ../ViewControllers/Catalog/View/CatalogItemTableViewCell.xib; sourceTree = "<group>"; };
-		8973D50B2016DAC90013BADD /* CatalogItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogItemTableViewCell.swift; path = ../ViewControllers/Catalog/View/CatalogItemTableViewCell.swift; sourceTree = "<group>"; };
 		89BD59D020180D4900637836 /* FeedCategoryEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCategoryEnum.swift; path = Utils/Enums/FeedCategoryEnum.swift; sourceTree = "<group>"; };
 		89BD59D720180EDA00637836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ITunes Catalog/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		89BD59D920180EDA00637836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ITunes Catalog/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		89BD59DC20180FC400637836 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogViewController.swift; path = "ITunes Catalog/ViewControllers/Catalog/CatalogViewController.swift"; sourceTree = SOURCE_ROOT; };
 		89BD59DE20180FD300637836 /* CatalogAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogAPI.swift; path = "ITunes Catalog/API/CatalogAPI.swift"; sourceTree = SOURCE_ROOT; };
+		89F4DC19201819BE00FB91C9 /* CatalogItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogItemTableViewCell.swift; path = "ITunes Catalog/ViewControllers/Catalog/View/CatalogItemTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		89F4DC1A201819BE00FB91C9 /* CatalogItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CatalogItemTableViewCell.xib; path = "ITunes Catalog/ViewControllers/Catalog/View/CatalogItemTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C095A6A42ABD718EE046456 /* Pods_ITunes_Catalog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2A87301C183A35AEE459AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D5053B60CF7D1E8D575A43 /* Pods_ITunes_Catalog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8906672D2016B01B00AAFC66 = {
 			isa = PBXGroup;
 			children = (
 				890667382016B01B00AAFC66 /* ITunes Catalog */,
 				890667372016B01B00AAFC66 /* Products */,
+				FA71422E7E20E1889E105DA0 /* Pods */,
+				0E2A87301C183A35AEE459AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,8 +155,8 @@
 		890667712016BDD600AAFC66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8973D5092016D7890013BADD /* CatalogItemTableViewCell.xib */,
-				8973D50B2016DAC90013BADD /* CatalogItemTableViewCell.swift */,
+				89F4DC19201819BE00FB91C9 /* CatalogItemTableViewCell.swift */,
+				89F4DC1A201819BE00FB91C9 /* CatalogItemTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,6 +203,15 @@
 			name = Enums;
 			sourceTree = "<group>";
 		};
+		FA71422E7E20E1889E105DA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8542EEF61A1E9470B917001D /* Pods-ITunes Catalog.debug.xcconfig */,
+				799966EFF0D155BFA95BF37B /* Pods-ITunes Catalog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 890667482016B01B00AAFC66 /* Build configuration list for PBXNativeTarget "ITunes Catalog" */;
 			buildPhases = (
+				49AC14649BD50B8542A11894 /* [CP] Check Pods Manifest.lock */,
 				890667322016B01B00AAFC66 /* Sources */,
 				890667332016B01B00AAFC66 /* Frameworks */,
 				890667342016B01B00AAFC66 /* Resources */,
+				7A9CF7303656C1120D86A9D5 /* [CP] Embed Pods Frameworks */,
+				030948D17E4D5DA307E0A9A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,26 +276,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BD59DA20180EDA00637836 /* LaunchScreen.storyboard in Resources */,
-				8973D50A2016D7890013BADD /* CatalogItemTableViewCell.xib in Resources */,
 				890667412016B01B00AAFC66 /* Assets.xcassets in Resources */,
+				89F4DC1C201819BE00FB91C9 /* CatalogItemTableViewCell.xib in Resources */,
 				89BD59DB20180EDA00637836 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030948D17E4D5DA307E0A9A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ITunes Catalog/Pods-ITunes Catalog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49AC14649BD50B8542A11894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ITunes Catalog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9CF7303656C1120D86A9D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ITunes Catalog/Pods-ITunes Catalog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ITunes Catalog/Pods-ITunes Catalog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		890667322016B01B00AAFC66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BD59E02018103000637836 /* CatalogItemTableViewCell.swift in Sources */,
 				89BD59DF20180FD300637836 /* CatalogAPI.swift in Sources */,
 				89BD59DD20180FC400637836 /* CatalogViewController.swift in Sources */,
 				89BD59D120180D4900637836 /* FeedCategoryEnum.swift in Sources */,
 				890667962016C03000AAFC66 /* Feed.swift in Sources */,
 				890667972016C03000AAFC66 /* Genres.swift in Sources */,
 				8906673C2016B01B00AAFC66 /* DashboardViewController.swift in Sources */,
+				89F4DC1B201819BE00FB91C9 /* CatalogItemTableViewCell.swift in Sources */,
 				8906679A2016C03000AAFC66 /* Results.swift in Sources */,
 				8906673A2016B01B00AAFC66 /* AppDelegate.swift in Sources */,
 				890667952016C03000AAFC66 /* Author.swift in Sources */,
@@ -396,6 +477,7 @@
 		};
 		890667492016B01B00AAFC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8542EEF61A1E9470B917001D /* Pods-ITunes Catalog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q99XSJA3RT;
@@ -409,6 +491,7 @@
 		};
 		8906674A2016B01B00AAFC66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799966EFF0D155BFA95BF37B /* Pods-ITunes Catalog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q99XSJA3RT;

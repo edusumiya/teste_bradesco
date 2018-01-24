@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import PKHUD
 class CatalogViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: View Objects
@@ -20,16 +20,15 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // MARK: Variables
     public var feedId : FeedCategory!
-    var catalog : CatalogFeed!
+    public var catalog : CatalogFeed!
     
     // MARK: Controller
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CatalogAPI.GetFeed(feedId: feedId, completion: { (feedResult) in
-            self.catalog = feedResult
-            self.ConfigScreen()
-        })
+        self.ConfigScreen()
+        
+        PKHUD.sharedHUD.hide()
     }
     
     override func didReceiveMemoryWarning() {
