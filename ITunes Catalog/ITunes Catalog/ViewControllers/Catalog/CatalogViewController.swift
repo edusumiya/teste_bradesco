@@ -26,18 +26,6 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ConfigScreen()
-        
-        PKHUD.sharedHUD.hide()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    // MARK: Other Methods
-    func ConfigScreen()
-    {
         do
         {
             self.tblCatalog.register(UINib(nibName: "CatalogItemTableViewCell", bundle: nil), forCellReuseIdentifier: "CatalogItem")
@@ -60,6 +48,8 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
         {
             print("Fail to Config Screen")
         }
+        
+        PKHUD.sharedHUD.hide()
     }
     
     // MARK: TableView Datasource
@@ -105,10 +95,21 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         catch
         {
-            print("Fail to create Cell from Table")
+            PKHUD.sharedHUD.contentView = PKHUDTextView(text: "Fail to create Cell from Table")
+            PKHUD.sharedHUD.show()
             return cell
         }
     }
     
     // MARK: TableView Delegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let catalogDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogDetail") as! CatalogDetailViewController
+        
+        catalogDetailViewController.resultItem = catalog.feed.results[indexPath.item]
+        
+        self.navigationController?.pushViewController(catalogDetailViewController, animated: true)
+    }
 }

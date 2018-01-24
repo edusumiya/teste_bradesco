@@ -23,6 +23,7 @@
 		89BD59DF20180FD300637836 /* CatalogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD59DE20180FD300637836 /* CatalogAPI.swift */; };
 		89F4DC1B201819BE00FB91C9 /* CatalogItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F4DC19201819BE00FB91C9 /* CatalogItemTableViewCell.swift */; };
 		89F4DC1C201819BE00FB91C9 /* CatalogItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89F4DC1A201819BE00FB91C9 /* CatalogItemTableViewCell.xib */; };
+		89F4DC1F20181EF000FB91C9 /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F4DC1E20181EF000FB91C9 /* CatalogDetailViewController.swift */; };
 		9C095A6A42ABD718EE046456 /* Pods_ITunes_Catalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D5053B60CF7D1E8D575A43 /* Pods_ITunes_Catalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		89BD59DE20180FD300637836 /* CatalogAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogAPI.swift; path = "ITunes Catalog/API/CatalogAPI.swift"; sourceTree = SOURCE_ROOT; };
 		89F4DC19201819BE00FB91C9 /* CatalogItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogItemTableViewCell.swift; path = "ITunes Catalog/ViewControllers/Catalog/View/CatalogItemTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		89F4DC1A201819BE00FB91C9 /* CatalogItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CatalogItemTableViewCell.xib; path = "ITunes Catalog/ViewControllers/Catalog/View/CatalogItemTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		89F4DC1E20181EF000FB91C9 /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogDetailViewController.swift; path = ViewControllers/CatalogDetail/CatalogDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +166,9 @@
 		890667722016BDEC00AAFC66 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				890667732016BE0400AAFC66 /* Dashboard */,
 				8906676F2016BD9C00AAFC66 /* Catalog */,
+				89F4DC1D20181EC800FB91C9 /* CatalogDetail */,
+				890667732016BE0400AAFC66 /* Dashboard */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,14 @@
 				89BD59D020180D4900637836 /* FeedCategoryEnum.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		89F4DC1D20181EC800FB91C9 /* CatalogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				89F4DC1E20181EF000FB91C9 /* CatalogDetailViewController.swift */,
+			);
+			name = CatalogDetail;
 			sourceTree = "<group>";
 		};
 		FA71422E7E20E1889E105DA0 /* Pods */ = {
@@ -355,6 +366,7 @@
 				890667952016C03000AAFC66 /* Author.swift in Sources */,
 				890667992016C03000AAFC66 /* CatalogFeed.swift in Sources */,
 				890667982016C03000AAFC66 /* Links.swift in Sources */,
+				89F4DC1F20181EF000FB91C9 /* CatalogDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
